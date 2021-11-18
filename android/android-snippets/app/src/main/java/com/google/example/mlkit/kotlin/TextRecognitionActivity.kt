@@ -28,7 +28,7 @@ class TextRecognitionActivity : AppCompatActivity() {
     private fun recognizeText(image: InputImage) {
 
         // [START get_detector_default]
-        val recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
+        val recognizer = TextRecognition.getClient()
         // [END get_detector_default]
 
         // [START run_detector]
@@ -82,7 +82,7 @@ class TextRecognitionActivity : AppCompatActivity() {
 
     private fun getTextRecognizer(): TextRecognizer {
         // [START mlkit_local_doc_recognizer]
-        return TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
+        return TextRecognition.getClient()
         // [END mlkit_local_doc_recognizer]
     }
 }

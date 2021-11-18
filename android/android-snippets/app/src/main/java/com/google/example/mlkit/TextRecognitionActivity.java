@@ -41,7 +41,7 @@ public class TextRecognitionActivity extends AppCompatActivity {
     private void recognizeText(InputImage image) {
 
         // [START get_detector_default]
-        TextRecognizer recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
+        TextRecognizer recognizer = TextRecognition.getClient();
         // [END get_detector_default]
 
         // [START run_detector]
@@ -103,7 +103,7 @@ public class TextRecognitionActivity extends AppCompatActivity {
 
     private TextRecognizer getTextRecognizer() {
         // [START mlkit_local_doc_recognizer]
-        TextRecognizer detector = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS);
+        TextRecognizer detector = TextRecognition.getClient();
         // [END mlkit_local_doc_recognizer]
 
         return detector;
